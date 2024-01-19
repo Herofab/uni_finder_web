@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href='https://fonts.googleapis.com/css?family=Raleway:400, 600' rel='stylesheet' type='text/css'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="/index.css">
+    <link rel="stylesheet" href="/about.css">
+</head>
+<body>
+    <div id="loader"></div>
+    
+    <div class="header">
+        <div class="container">
+          <ul class="nav">
+           <a href="/index.html"><li> Home</li></a> 
+            <a href="/unidata.html"> <li>Universities</li></a>
+            <a href="/contact.html"><li>Contact</li></a>
+            <a href="#" onclick="openModal()" style="text-align: right;">
+              <li style="text-align: right;">Filter</li>
+            </a>
+         
+          
+          <a href="/login.html" style="text-align: right;"> <li style="text-align: right;">LOGIN</li></a> 
+          <a href="/signup.html" style="text-align: right;"> <li style="text-align: right;">Sign Up</li></a> 
+        </ul>
+        </div>
+        
+      </div>
+        <div id="myModal" class="modal">
+          <div class="modal-content">
+           <a href="#" onclick="closeModal()"> <span class="close">&times;</span></a>
+            <p>Some text in the Modal..</p>
+
+            <select name="color" id="color">
+              <option value="gpa">Merit</option>
+              <option value="90">90% & above</option>
+              <option value="80">80% & above</option>
+              <option value="70">70% & above</option>
+              <option value="60">60% & above</option>
+              <option value="50">50% & above</option>
+              <option value="45">45% & above</option>
+
+              
+            </select><br>
+            <select name="price" id="price">
+              <option value="fee">Fee</option>
+              <option value="high">High To Low</option>
+              <option value="low">Low To High</option>
+            </select><br>
+            <select name="size" id="size">
+              <option value="zone">Select Zone</option>
+              <option value="zone1">Zone1</option>
+            </select><br>
+            <select name="gender" id="gender">
+              <option value="area">Area</option>
+              <option value="g">G Sectors</option>
+              <option value="f">F Sectors</option>
+              <option value="h">H Sectors</option>
+            </select><br><p>Select any three Departments</p><br>
+            <select id="category" name="category" style="margin-right: 20px;">
+              <option value="accessories">Select Dep</option>
+              <option value="footwear">Computer Science</option>
+              <option value="clothes">Physics</option>
+          </select><br><p>Select second subject(optional)</p><br>
+          <select id="category" name="category" style="margin-right: 20px;">
+            <option value="accessories">Select Dep</option>
+            <option value="footwear">Computer Science</option>
+            <option value="clothes">Physics</option>
+        </select><br><p>Select third subject(optional)</p><br>
+        <select id="category" name="category" style="margin-right: 20px;">
+          <option value="accessories">Select Dep</option>
+          <option value="footwear">Computer Science</option>
+          <option value="clothes">Physics</option>
+      </select>
+
+         
+         </div>
+
+         <!-- filter section -->
+        <section class="filter" id="filter" >
+    <div class="filter_cont">
+      <hr />
+      <div class="fluid-container">
+        <div class="row">
+          <div class="col-md-8">
+            <div class="row">
+              <div class="col-md-2 col-sm-12">
+                <select id="category" name="category" style="margin-right: 20px;">
+                  <option value="accessories">Select Dep</option>
+                  <option value="footwear">Computer Science</option>
+                  <option value="clothes">Physics</option>
+              </select>
+                
+              </div>
+
+              <div class="col-md-2 col-sm-12">
+                <select name="price" id="price">
+                  <option value="fee">Fee</option>
+                  <option value="high">High To Low</option>
+                  <option value="low">Low To High</option>
+                </select>
+              </div>
+              <div class="col-md-2 col-sm-12">
+                <select name="gender" id="gender">
+                  <option value="area">Area</option>
+                  <option value="g">G Sectors</option>
+                  <option value="f">F Sectors</option>
+                  <option value="h">H Sectors</option>
+                </select>
+              </div>
+              <div class="col-md-2 col-sm-12">
+                <select name="size" id="size">
+                  <option value="zone">Select Zone</option>
+                  <option value="zone1">Zone1</option>
+                </select>
+              </div>
+              <div class="col-md-2 col-sm-12">
+                <select name="color" id="color">
+                  <option value="gpa">Merit</option>
+                  <option value="90">90% & above</option>
+                  <option value="80">80% & above</option>
+                  <option value="70">70% & above</option>
+                  <option value="60">60% & above</option>
+                  <option value="50">50% & above</option>
+                  <option value="45">45% & above</option>
+
+                  
+                </select>
+              </div>
+              <div class="col-md-2 col-sm-12">
+                <select name="type" id="type">
+                  <option value="footeWear">Product Type</option>
+                </select>
+              </div>
+            </div>
+          </div> 
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr />
+    </div>
+    <section class="table">
+    <div class="table" style="overflow-y: scroll;">
+      <h1 style="padding: 10px;">Find Your Desired University</h1>
+      <table id="universitiesTable">
+        <thead>
+          <tr>
+            <th>Image</th>
+            <th>University Name</th>
+            <th>Rank</th>
+            <th>Speciality</th>
+            <th>World Rank</th>
+            <th>Merit</th>
+            <th>Sector</th>
+            <th>Visit</th>
+            <th>Location</th>
+            <th>See Detail</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- University rows will be inserted here by JavaScript -->
+        </tbody>
+      </table>
+    </div>
+  
+  </section>
+  <section class="ttbody">
+    <div class="levels" style="padding: 10px;">
+     <h3 style="text-align: center;margin: 5px;align-items: center;">
+      "The only limit to our realization of tomorrow will be our doubts of today." <br><br><br><br><br>- Franklin D. 
+     </h3> 
+    </div>
+    <div class="levels">
+      <h3 style="text-align: center;margin: 5px;align-items: center;">
+        "The only limit to our realization of tomorrow will be our doubts of today." <br><br><br><br><br>- Franklin D. 
+       </h3> 
+    </div>
+    <div class="levels">
+      <h3 style="text-align: center;margin: 5px;align-items: center;">
+        "The only limit to our realization of tomorrow will be our doubts of today." <br><br><br><br><br>- Franklin D. 
+       </h3> 
+    </div>
+    <div class="levels">
+      <h3 style="text-align: center;margin: 5px;align-items: center;">
+        "The only limit to our realization of tomorrow will be our doubts of today." <br><br><br><br><br>- Franklin D. 
+       </h3> 
+    </div>
+  </section>
+      <div class="footer">
+        <div class="container">
+            <div class="contact">
+               <a href=""> <p> <span class="material-symbols-outlined">
+                    call
+                    </span> 03333333333</p></a>
+               <a href=""> <p> <span class="material-symbols-outlined">
+                    mail
+                    </span> mails@gmail.com</p></a>
+            </div>
+          <p style="text-align: center;">&copy; final year project 2024</p>
+        </div>
+      </div>
+    <script src="/index.js"></script>
+    <script async src='https://d2mpatx37cqexb.cloudfront.net/delightchat-whatsapp-widget/embeds/embed.min.js'></script>
+<script>
+var wa_btnSetting = {"btnColor":"#0d6efd","ctaText":"WhatsApp Us","cornerRadius":40,"marginBottom":20,"marginLeft":20,"marginRight":20,"btnPosition":"right","whatsAppNumber":"92333333333","welcomeMessage":"","zIndex":999999,"btnColorScheme":"light"};
+var wa_widgetSetting = {"title":"wodo","subTitle":"Kick start your career with us","headerBackgroundColor":"#0d6efd","headerColorScheme":"dark","greetingText":"Hi there! \nHow can I help you?","ctaText":"Start Chat","btnColor":"#0d6efd","cornerRadius":40,"welcomeMessage":"Hello","btnColorScheme":"light","brandImage":"https://uploads-ssl.webflow.com/5f68a65cd5188c058e27c898/6204c4267b92625c9770f687_whatsapp-chat-widget-dummy-logo.png","darkHeaderColorScheme":{"title":"#333333","subTitle":"#4F4F4F"}};
+window.onload = () => {
+_waEmbed(wa_btnSetting, wa_widgetSetting);
+};
+</script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+     integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+   <script>
+    const buttons = document.querySelectorAll("[data-slide-direction]");
+
+buttons.forEach((button) => {
+  button.addEventListener("click", () => {
+    const offset = button.dataset.slideDirection === "next" ? 1 : -1;
+    changeSlide(offset);
+  });
+});
+
+const changeSlide = (offset) => {
+  const slides = document.querySelector(".slides");
+  const activeSlide = slides.querySelector("[data-active-slide]");
+  let newIndex = [...slides.children].indexOf(activeSlide) + offset;
+  newIndex =
+    newIndex < 0
+      ? slides.children.length - 1
+      : newIndex === slides.children.length
+      ? 0
+      : newIndex;
+  slides.children[newIndex].dataset.activeSlide = true;
+  delete activeSlide.dataset.activeSlide;
+
+  const circles = document.querySelector(".slides-circles");
+  const activeCircle = circles.querySelector("[data-active-slide]");
+  circles.children[newIndex].dataset.activeSlide = true;
+  delete activeCircle.dataset.activeSlide;
+};
+
+setInterval(changeSlide.bind(null, 1), 6000);
+
+
+document.getElementById('loader').style.display = 'block'; // Show loader
+setTimeout(() => {
+ document.getElementById('loader').style.display = 'none'; // Hide loader after 2 seconds
+}, 2000);
+// filter model
+var modal = document.getElementById("myModal");
+var filter = document.getElementById("filter");
+
+function openModal() {
+  modal.style.display = "block";
+  filter.style.display="none";
+ 
+  setTimeout(function() { // Timeout to allow the display change to take effect
+    modal.style.opacity = 1;
+    filter.style.opacity = 0;
+
+  }, 10);
+}
+
+function closeModal() {
+  modal.style.opacity = 0;
+  filter.style.opacity = 1;
+  setTimeout(function() { // Timeout for the transition to complete
+    modal.style.display = "none";
+    filter.style.display="block";
+  }, 500); // This should match the duration of the transition
+}
+
+window.onclick = function(event) {
+  if (event.target == modal) {
+    closeModal();
+  }
+}
+
+// Get the element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on the close button, close the modal
+span.onclick = function() {
+  closeModal();
+}
+
+
+// code for json data
+// This function will be called when the user clicks on a university link
+function visitUniversity(url) {
+  window.location.href = url;
+}
+
+// Fetch the JSON data and populate the table
+// Fetch the JSON data and populate the table
+fetch('unidata.json')
+ .then(response => response.json())
+ .then(data => {
+   const tableBody = document.getElementById('universitiesTable').querySelector('tbody');
+   data.forEach(uni => {
+     const row = document.createElement('tr');
+     row.innerHTML = `
+       <td><img style="height: 50px; width: 50px;" src="${uni.imageAddress}" alt="${uni.universityName}"></td>
+       <td>${uni.universityName}</td>
+       <td>${uni.universityRank}</td>
+       <td>${uni.speciality}</td>
+       <td>${uni.worldRank}</td>
+       <td>${uni.merit}%</td>
+       <td>${uni.sector}</td>
+       <td><a style="color:blue;" href="${uni.universityLink}"><span class="material-symbols-outlined">
+open_in_new
+</span></a></td>
+<td><a style="color:green" href="${uni.location}"><span class="material-symbols-outlined">
+map
+</span></a></td>
+<td><a style="color:red" href="about.html?id=${uni.id}"><span class="material-symbols-outlined">
+info
+</span></a></td>
+      
+     `;
+     tableBody.appendChild(row);
+   });
+ })
+ .catch(error => console.error('Error loading university data:', error));
+   </script>
+</body>
+</html>
